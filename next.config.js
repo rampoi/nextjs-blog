@@ -4,3 +4,8 @@ module.exports = {
         path: 'https://example.com/myaccount/',
     },
 }
+
+module.exports = {
+    basePath: process.env.GITHUB_ACTIONS ? "/nextjs-blog" : "",
+    trailingSlash: true,
+  };
