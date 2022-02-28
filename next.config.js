@@ -19,6 +19,8 @@ module.exports = {
     trailingSlash: true,
     
     nextConfig,
+
+    publicRuntimeConfig: { urlPrefix },
 }
 
 // module.exports = {
