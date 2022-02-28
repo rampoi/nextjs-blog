@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
+              <Link href="/nextjs-blog/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
@@ -63,7 +63,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
+          <Link href="/nextjs-blog/">
             <a>← Back to home</a>
           </Link>
         </div>
