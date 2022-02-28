@@ -1,15 +1,3 @@
-module.exports = {
-    images: {
-        loader: 'imgix',
-        path: 'https://example.com/myaccount/',
-    },
-}
-
-module.exports = {
-    basePath: process.env.GITHUB_ACTIONS ? "/nextjs-blog" : "",
-    trailingSlash: true,
-  };
-
 const REPO_NAME = 'nextjs-blog'
 
 const urlPrefix = process.env.NODE_ENV === 'production'
@@ -21,4 +9,24 @@ const nextConfig = {
     basePath: urlPrefix,
 }
 
-module.exports = nextConfig
+module.exports = {
+    images: {
+        loader: 'imgix',
+        path: 'https://example.com/myaccount/',
+    },
+
+    basePath: process.env.GITHUB_ACTIONS ? "/nextjs-blog" : "",
+    trailingSlash: true,
+    
+    nextConfig,
+}
+
+// module.exports = {
+//     basePath: process.env.GITHUB_ACTIONS ? "/nextjs-blog" : "",
+//     trailingSlash: true,
+    
+//   };
+
+
+
+// module.exports = nextConfig
