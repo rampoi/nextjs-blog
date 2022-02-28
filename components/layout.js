@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <img
               priority
-              src={url('/images/profile.jpg')}
+              src="/nextjs-blog/public/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
