@@ -5,8 +5,6 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { basePath } from '../next.config'
 
-const dir = basePath
-
 const name = '[Your Name]'
 export const siteTitle = 'Next.js Sample Website'
 
@@ -33,7 +31,7 @@ export default function Layout({ children, home }) {
           <>
             <img
               priority
-              src={dir+'/images/profile.jpg'}
+              src={basePath+'/images/profile.jpg'}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -47,7 +45,7 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   priority
-                  src={dir+'/images/profile.png'}
+                  src={'/nextjs-blog/images/profile.jpg'}
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
