@@ -10,7 +10,7 @@ module.exports = {
     trailingSlash: true,
   };
 
-const REPO_NAME = ''
+const REPO_NAME = 'nextjs-blog'
 
 const urlPrefix = process.env.NODE_ENV === 'production'
     ? '/' + REPO_NAME
