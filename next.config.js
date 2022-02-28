@@ -1,7 +1,5 @@
 const REPO_NAME = 'nextjs-blog'
 
-const prod = process.env.NODE_ENV === 'production'
-
 const urlPrefix = process.env.NODE_ENV === 'production'
     ? '/' + REPO_NAME
     : ''
@@ -23,8 +21,6 @@ module.exports = {
     nextConfig,
 
     publicRuntimeConfig: { urlPrefix },
-
-    'process.env.BACKEND_URL': prod ? '/nextjs-blog' : "",
 }
 
 // module.exports = {

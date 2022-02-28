@@ -5,8 +5,6 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { basePath } from '../next.config'
 
-const dir = String(process.env.BACKEND_URL)
-
 const name = '[Your Name]'
 export const siteTitle = 'Next.js Sample Website'
 
@@ -56,7 +54,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/nextjs-blog/">
+              <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
@@ -66,7 +64,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/nextjs-blog/">
+          <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
